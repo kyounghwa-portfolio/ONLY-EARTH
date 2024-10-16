@@ -91,6 +91,7 @@ header {
     height: 3000px;
     margin-top: 102px;
     background: url(../images/main/main_bg.png) no-repeat center top;
+    overflow: hidden;
 }
 
 .mb1 {
@@ -154,6 +155,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .content1 h1 {
@@ -200,6 +202,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .content2 h1 {
