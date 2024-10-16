@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: '양진체';
+    src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    min-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+.logo {
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.nav a {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px 20px 5px;
+    position: relative;
+}
+
+.nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -5px;
+    left: 0;
+    background-color: #28b9cc;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.nav a:hover::before {
+    transform: scaleX(1);
+}
+
+/* header */
+
+/* main banner */
+.mb {
+    width: 100%;
+    height: 449px;
+    margin-top: 102px;
+    background: url(../images/sub3/banner_upcycling.png) center top/cover;
+}
+
+.mb_in {
+    width: 1320px;
+    margin: auto;
+    padding: 50px 30px;
+}
+
+.mb_in h1,
+.mb_in p {
+    color: #542502;
+}
+
+.mb_in h1 {
+    font-size: 50px;
+    font-weight: 800;
+    padding-bottom: 50px;
+}
+
+.mb_in p {
+    font-size: 25px;
+}
+
+/* main banner */
+
+/* contents */
+.category {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.subtitle1{
+    font-family: '양진체';
+    font-size: 50px;
+    font-weight: 500;
+    color: #0F6FB9;
+    padding: 150px 0 50px;
+    background: url(../images/sub3/upcycle_line.png) no-repeat center 180px;
+}
+.subtitle{
+    font-family: '양진체';
+    font-size: 50px;
+    font-weight: 500;
+    color: #0F6FB9;
+    padding: 50px 0;
+    background: url(../images/sub3/upcycle_line.png) no-repeat center 80px;
+}
+.category h2{
+    padding: 30px 0 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.category p{
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.category ul {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.category ul li{
+    padding: 0 20px;
+}
+.category img {
+    display: block;
+}
+
+.img_container {
+    position: relative;
+    overflow: hidden;
+}
+
+.bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.top {
+    transition: 0.5s;
+}
+
+.category ul li:hover .top {
+    opacity: 0;
+}
+
+.category ul li:hover .bottom {
+    opacity: 1;
+}
+.category ul li:hover h2{
+    color: #00C897;
+}
+
+/* contents */
+
+/* button1 */
+.bt{
+    text-align: end;
+    width: 100%;
+}
+.button1 {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 3px 15px 3px 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ff9d01;
+    border: 1px solid #ff9d01;
+    border-radius: 50px 50px 50px 0;
+    transition: 0.3s;
+}
+
+.button1:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 8px 8px 5px rgba(255, 157, 1,0.5);
+}
+
+
+/* footer */
+footer {
+    background-color: #0f6fb9;
+    padding: 25px 0 10px;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.whitelogo {
+    display: block;
+    margin-top: 20px;
+}
+
+.copy {
+    text-align: center;
+}
+
+.ft_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.ft_in a {
+    display: block;
+}
+
+.ft_in ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0 8px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.ft_lt h5 {
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+.ft_lt p {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.ft_lt ul a {
+    font-size: 14px;
+    color: #fff;
+    padding-right: 50px;
+}
+
+.ft_lt ul a:hover {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.sns {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: flex;
+}
+
+.sns a {
+    padding-left: 20px;
+    opacity: 0.4;
+}
+
+.sns a:hover {
+    opacity: 1;
+}
+
+.copy {
+    padding: 15px 0 20px;
+    font-size: 14px;
+}
+
+/* footer */

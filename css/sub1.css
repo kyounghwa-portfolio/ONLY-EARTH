@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    min-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+.logo {
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.nav a {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px 20px 5px;
+    position: relative;
+}
+
+.nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -5px;
+    left: 0;
+    background-color: #28b9cc;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.nav a:hover::before {
+    transform: scaleX(1);
+}
+
+/* header */
+
+/* main banner */
+.mb {
+    width: 100%;
+    height: 449px;
+    margin-top: 102px;
+    background: url(../images/sub1/banner_sea.png) center top/cover;
+}
+
+.mb_in {
+    width: 1320px;
+    margin: auto;
+    padding: 50px 30px;
+}
+
+.mb_in h1,
+.mb_in p {
+    color: #002E48;
+}
+
+.mb_in h1 {
+    font-size: 50px;
+    font-weight: 800;
+    padding-bottom: 50px;
+}
+
+.mb_in p {
+    font-size: 25px;
+}
+
+/* main banner */
+
+/* contents */
+
+/* logo */
+.biglogo img {
+    display: block;
+    width: 30%;
+    height: 30%;
+    margin: 80px auto;
+}
+
+/* BRAND NAME */
+.content1 {
+    background-color: #f7f6f2;
+    padding-bottom: 50px;
+}
+
+.name {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    line-height: 2.0;
+}
+
+.name h1 {
+    padding: 40px 0 60px;
+    font-size: 40px;
+}
+
+.OE {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.OEKor {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name_1 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    align-items: center;
+}
+
+.name_1 div {
+    text-align: left;
+}
+
+h2 span {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #0f6fb9;
+    background-color: #0f6fb9;
+    border-radius: 30px;
+    padding: 2px 15px;
+    margin-bottom: 20px;
+}
+
+.name_2 h2 span {
+    margin-bottom: 30px;
+}
+
+.name_2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    align-items: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.left ul {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left li {
+    width: 33.33%;
+    padding-bottom: 15px;
+}
+
+.right {
+    width: 380px;
+    text-align: left;
+}
+
+
+/* BRANS SLOGAN */
+.content2 {
+    width: 100%;
+    height: 730px;
+    background: url(../images/sub1/sky.png) no-repeat center top/cover;
+
+}
+
+.slogan {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    line-height: 2.0;
+}
+
+.slogan h1 {
+    padding: 40px 0 30px;
+    font-size: 40px;
+}
+
+.slogan h2 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.slogan h4,
+.slogan p {
+    padding-bottom: 40px;
+}
+
+/* BRAND MISSION */
+.content3 {
+    width: 100%;
+    background-color: #fff1d4;
+}
+
+.mission {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    line-height: 2.0;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.mission h1 {
+    padding: 40px 0 60px;
+    font-size: 40px;
+}
+
+.mission p {
+    padding-bottom: 40px;
+}
+
+.mission ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission li {
+    height: 460px;
+    background-color: #f9c146;
+    border-radius: 30px;
+}
+
+.mission h5 {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px 0 10px;
+}
+
+
+
+/* video */
+.video {
+    width: 1320px;
+    height: 743px;
+    margin: 100px auto 0;
+    background: url(../images/sub1/video.png) no-repeat center top;
+    position: relative;
+}
+
+.video p {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(130, 130, 130, 0.5);
+    padding: 20px;
+    backdrop-filter: blur(5px)
+}
+
+/* button1 */
+.button1 {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ff9d01;
+    border: 1px solid #ff9d01;
+    border-radius: 50px 50px 50px 0;
+    margin: 10px 0 0 1220px;
+    transition: 0.3s;
+}
+
+.button1:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 8px 8px 5px rgba(255, 157, 1, 0.5);
+}
+
+/* contents */
+
+
+
+/* footer */
+footer {
+    background-color: #0f6fb9;
+    padding: 25px 0 10px;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.whitelogo {
+    display: block;
+    margin-top: 20px;
+}
+
+.copy {
+    text-align: center;
+}
+
+.ft_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.ft_in a {
+    display: block;
+}
+
+.ft_in ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0 8px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.ft_lt h5 {
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+.ft_lt p {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.ft_lt ul a {
+    font-size: 14px;
+    color: #fff;
+    padding-right: 50px;
+}
+
+.ft_lt ul a:hover {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.sns {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: flex;
+}
+
+.sns a {
+    padding-left: 20px;
+    opacity: 0.4;
+}
+
+.sns a:hover {
+    opacity: 1;
+}
+
+.copy {
+    padding: 15px 0 20px;
+    font-size: 14px;
+}
+
+/* footer */
