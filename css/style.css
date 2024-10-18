@@ -40,7 +40,7 @@ header {
 }
 
 .header_in {
-    width: 1320px;
+    max-width: 1320px;
     margin: auto;
     align-items: center;
     display: flex;
