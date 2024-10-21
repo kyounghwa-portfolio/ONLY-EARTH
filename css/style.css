@@ -156,6 +156,7 @@ header {
     flex-wrap: wrap;
     box-sizing: border-box;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .content1 h1 {
@@ -246,6 +247,10 @@ header {
 
 
 /* button1 */
+.bt_box{
+    width: 1320px;
+    margin: auto;
+}
 .bt{
     text-align: end;
     width: 100%;
