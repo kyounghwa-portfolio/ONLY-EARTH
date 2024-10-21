@@ -45,3 +45,7 @@ var swiper = new Swiper(".mySwiper", {
     freeMode: true,
     watchSlidesProgress: true,
   });
+
+  AOS.init({
+    duration: 1200 //aos 나타나는 속도
+  });
