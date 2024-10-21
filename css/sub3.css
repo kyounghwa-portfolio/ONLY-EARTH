@@ -191,6 +191,10 @@ header {
 /* contents */
 
 /* button1 */
+.bt_box{
+    width: 1320px;
+    margin: auto;
+}
 .bt{
     text-align: end;
     width: 100%;
