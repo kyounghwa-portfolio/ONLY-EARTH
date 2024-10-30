@@ -278,24 +278,11 @@ h2 span {
 
 
 /* video */
-.video {
+.vd {
     width: 1320px;
-    height: 743px;
-    margin: 100px auto 0;
-    background: url(../images/sub1/video.png) no-repeat center top;
-    position: relative;
+    margin: 100px auto ;
 }
 
-.video p {
-    position: absolute;
-    bottom: 100px;
-    left: 100px;
-    font-size: 20px;
-    color: #fff;
-    background-color: rgba(130, 130, 130, 0.5);
-    padding: 20px;
-    backdrop-filter: blur(5px)
-}
 
 /* button1 */
 .button1 {
@@ -325,7 +312,6 @@ h2 span {
 footer {
     background-color: #0f6fb9;
     padding: 25px 0 10px;
-    margin-top: 100px;
     color: #fff;
 }
 
